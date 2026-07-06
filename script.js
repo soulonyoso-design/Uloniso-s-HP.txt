@@ -18,11 +18,13 @@ const per = document.querySelector("#per")
 let p = 1
 const group = document.querySelector("#group")
 const data = document.querySelector("#data")
+const fail = document.querySelector("#fail")
+fail.style.display = "none";
 
 data.style.display = "none";
 
 document.addEventListener("click", () => {  
-
+  fail.style.display = "";
   
 setInterval(() => {
   x = Math.floor(Math.random() * (window.innerWidth + 1));
